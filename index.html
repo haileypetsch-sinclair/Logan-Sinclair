@@ -676,7 +676,8 @@
         <a class="clink" href="mailto:Logan.sinclair11@icloud.com"><div class="cl-icon">✉️</div> logan.sinclair11@icloud.com</a>
         <a class="clink" href="https://www.linkedin.com/in/loganstevensinclair/" target="_blank"><div class="cl-icon">🔗</div> https://www.linkedin.com/in/loganstevensinclair/</a>
       </div>
-     
+</section>
+
 <footer>
   <p>© 2026 Logan Sinclair &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/loganstevensinclair/" target="_blank">LinkedIn</a></p>
 </footer>
@@ -715,15 +716,7 @@
     sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
     navLinks.forEach(a => { a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : ''; });
   });
-  document.querySelector('.cform').addEventListener('submit', function(e) {
-    if (this.action.includes('YOUR_FORM_ID')) {
-      e.preventDefault();
-      const name    = document.getElementById('name').value;
-      const subject = document.getElementById('subject').value || 'Message from your website';
-      const message = document.getElementById('message').value;
-      window.location.href = 'mailto:Logan.sinclair11@icloud.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent('Hi Logan,\n\n' + message + '\n\n— ' + name);
-    }
-  });
+ 
 </script>
 </body>
 </html>
